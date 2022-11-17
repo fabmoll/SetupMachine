@@ -29,16 +29,16 @@ executeScript "RemoveDefaultApps.ps1";
 
 #executeScript "CommonDevTools.ps1"; todo pour les petites apps
 #--- executeScript "Browsers.ps1";
-#executeScript "WindowsTools.ps1";todo pour les petites apps
+executeScript "WindowsTools.ps1";
 
 
 #--- Visual Studio ---
-choco install visualstudio2022enterprise -y --force
+choco install visualstudio2022enterprise -y 
 #-y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
 Update-SessionEnvironment #refreshing env due to Git install
 
-choco install -y visualstudio2022-workload-manageddesktop --force
-choco install -y visualstudio2022-workload-office --force
+choco install -y visualstudio2022-workload-manageddesktop 
+choco install -y visualstudio2022-workload-office
 
 #--- Visual Studio extensions ---
 #choco install -y gitdiffmargin
