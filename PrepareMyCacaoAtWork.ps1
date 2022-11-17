@@ -37,8 +37,8 @@ choco install visualstudio2022enterprise -y --force
 #-y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
 Update-SessionEnvironment #refreshing env due to Git install
 
-choco install -y visualstudio2022-workload-manageddesktop
-choco install -y visualstudio2022-workload-office
+choco install -y visualstudio2022-workload-manageddesktop --force
+choco install -y visualstudio2022-workload-office --force
 
 #--- Visual Studio extensions ---
 #choco install -y gitdiffmargin
