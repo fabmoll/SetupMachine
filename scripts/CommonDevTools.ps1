@@ -4,5 +4,6 @@ choco install -y git --package-parameters="'/GitAndUnixToolsOnPath /WindowsTermi
 choco install -y poshgit
 choco install -y oh-my-posh
 choco install -y sysinternals
+choco install -y gitkraken
 
 Install-Module -Force oh-my-posh
