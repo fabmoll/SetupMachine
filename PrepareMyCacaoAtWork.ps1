@@ -33,7 +33,7 @@ function executeScript {
 
 
 #--- Visual Studio ---
-choco install visualstudio2019enterprise 
+choco install visualstudio2019enterprise -y
 #-y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
 Update-SessionEnvironment #refreshing env due to Git install
 
