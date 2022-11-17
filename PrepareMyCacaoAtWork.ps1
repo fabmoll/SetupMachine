@@ -33,12 +33,12 @@ executeScript "RemoveDefaultApps.ps1";
 
 
 #--- Visual Studio ---
-choco install visualstudio2019enterprise --force
+choco install visualstudio2022enterprise --force
 #-y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
 Update-SessionEnvironment #refreshing env due to Git install
 
-choco install -y visualstudio2019-workload-manageddesktop
-choco install -y visualstudio2019-workload-office
+choco install -y visualstudio2022-workload-manageddesktop
+choco install -y visualstudio2022-workload-office
 
 #--- Visual Studio extensions ---
 #choco install -y gitdiffmargin
