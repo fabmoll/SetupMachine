@@ -28,22 +28,22 @@ function executeScript {
 
 
 
-#executeScript "FileExplorerSettings.ps1";
-#executeScript "RemoveDefaultApps.ps1";
+executeScript "FileExplorerSettings.ps1";
+executeScript "RemoveDefaultApps.ps1";
 
-#executeScript "CommonDevTools.ps1";
+executeScript "CommonDevTools.ps1";
 
-executeScript "WSL.ps1"
-#executeScript "WindowsTools.ps1";
+#executeScript "WSL.ps1"
+executeScript "WindowsTools.ps1";
 
 
 #--- Visual Studio ---
-#choco install visualstudio2022enterprise -y 
+choco install visualstudio2022enterprise -y 
 #-y --package-parameters "--add Microsoft.VisualStudio.Component.Git" 
-#Update-SessionEnvironment #refreshing env due to Git install
+Update-SessionEnvironment #refreshing env due to Git install
 
-#choco install -y visualstudio2022-workload-manageddesktop 
-#choco install -y visualstudio2022-workload-office
+choco install -y visualstudio2022-workload-manageddesktop 
+choco install -y visualstudio2022-workload-office
 
 #--- Visual Studio extensions ---
 #choco install -y gitdiffmargin
